@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #212832;
+    --secondary-color: #7264d6;
+    --text-color: #696d76;
+}
+
+body {
+    /* font-family: "Inter", sans-serif; */
+    font-family: "Open Sans", sans-serif;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+/* Custom  scrollbar*/
+::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(22, 24, 35, 0.2);
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+/* Loại bỏ giao diện khi sử dụng tính năng "tự động điền" của trình duyệt */
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+input:-webkit-autofill:hover {
+    transition: background-color 1s 9999s;
+    -webkit-text-fill-color: var(--primary-color);
+    caret-color: var(--primary-color);
+}
+
+/* ==========================================Common================================================ */
+a {
+    text-decoration: none;
+}
+
+button {
+    color: inherit;
+    font-size: inherit;
+    background: transparent;
+}
